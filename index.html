@@ -24,7 +24,11 @@
         </a-camera>
         <a-anchor hit-testing.enabled="true">
 
-            <a-entity geometry="primitive: box" material="color: red" light="type: point; intensity: 2.0">
+            <a-assets>
+                <a-asset-item id="tree" src="./obj/scene.gltf"></a-asset-item>
+              </a-assets>
+            
+              <a-entity gltf-model="#tree"></a-entity>
 
         </a-anchor>
         <a-camera-static />
