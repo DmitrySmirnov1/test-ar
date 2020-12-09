@@ -48,10 +48,7 @@
         </a-camera>
         <a-anchor hit-testing.enabled="true">
 
-            <a-sphere id="sphere" position="1 0.5 0">
-                <a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite">
-                </a-animation>
-            </a-sphere>
+            <a-entity geometry="primitive: box" material="color: red" light="type: point; intensity: 2.0">
 
         </a-anchor>
         <a-camera-static />
