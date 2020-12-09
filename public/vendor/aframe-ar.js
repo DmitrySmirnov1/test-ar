@@ -8214,19 +8214,6 @@ AFRAME.registerComponent('arjs-anchor', {
 			//////////////////////////////////////////////////////////////////////////////
 			//		honor .debugUIEnabled
 			//////////////////////////////////////////////////////////////////////////////
-			if( arjsSystem.data.debugUIEnabled ){
-				// get or create containerElement
-				var containerElement = document.querySelector('#arjsDebugUIContainer')
-				if( containerElement === null ){
-					containerElement = document.createElement('div')
-					containerElement.id = 'arjsDebugUIContainer'
-					containerElement.setAttribute('style', 'position: fixed; bottom: 10px; width:100%; text-align: center; z-index: 1; color: grey;')
-					document.body.appendChild(containerElement)
-				}
-				// create anchorDebugUI
-				var anchorDebugUI = new ARjs.AnchorDebugUI(arAnchor)
-				containerElement.appendChild(anchorDebugUI.domElement)		
-			}
 		}, 1000/60)
 	},
 	remove : function(){
@@ -8632,20 +8619,6 @@ AFRAME.registerSystem('arjs', {
 			//		honor .debugUIEnabled
 			//////////////////////////////////////////////////////////////////////////////
 			if( _this.data.debugUIEnabled )	initDebugUI()
-			function initDebugUI(){
-				// get or create containerElement
-				var containerElement = document.querySelector('#arjsDebugUIContainer')
-				if( containerElement === null ){
-					containerElement = document.createElement('div')
-					containerElement.id = 'arjsDebugUIContainer'
-					containerElement.setAttribute('style', 'position: fixed; bottom: 10px; width:100%; text-align: center; z-index: 1;color: grey;')
-					document.body.appendChild(containerElement)
-				}
-
-				// create sessionDebugUI
-				var sessionDebugUI = new ARjs.SessionDebugUI(arSession)
-				containerElement.appendChild(sessionDebugUI.domElement)
-			}
 		})
 
 		//////////////////////////////////////////////////////////////////////////////
