@@ -12,29 +12,6 @@
             padding: 0;
         }
 
-        #map {
-            display: none;
-        }
-
-        #details {
-            position: fixed;
-            height: 200px;
-            background: transparent;
-            color: cadetblue;
-            padding-left: 20px;
-            top: 50px;
-        }
-
-        #details .title {
-            color: slategray;
-            font-size: small;
-        }
-
-        #locate {
-            position: fixed;
-            left: 20px;
-            top: 10px;
-        }
     </style>
     <script src="vendor/aframe.js"></script>
     <script src="vendor/aframe-ar.js"></script>
@@ -42,7 +19,6 @@
 
 <body>
 
-    <div id="map"></div>
     <a-scene embedded arjs="trackingMethod:best;">
         <a-camera>
         </a-camera>
@@ -53,9 +29,6 @@
         </a-anchor>
         <a-camera-static />
     </a-scene>
-
-    <button id="locate">Locate ISS</button>
-    <div id="details"></div>
 
     <script src="https://api.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.js"></script>
     <script src="src/js/main.js"></script>
