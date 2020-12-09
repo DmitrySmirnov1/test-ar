@@ -11,7 +11,6 @@
             margin: 0;
             padding: 0;
         }
-
     </style>
     <script src="vendor/aframe.js"></script>
     <script src="vendor/aframe-ar.js"></script>
@@ -24,7 +23,7 @@
         </a-camera>
         <a-anchor hit-testing.enabled="true">
 
-            <a-entity geometry="primitive: box" material="color: red" light="type: point; intensity: 2.0">
+            <a-entity gltf-model="url(./obj/scene.gltf)"></a-entity>
 
         </a-anchor>
         <a-camera-static />
