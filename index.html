@@ -11,23 +11,20 @@
             margin: 0;
             padding: 0;
         }
+
     </style>
     <script src="vendor/aframe.js"></script>
     <script src="vendor/aframe-ar.js"></script>
 </head>
 
 <body>
-    <a-assets>
-        <a-asset-item id="tree" src="./obj/scene.gltf"></a-asset-item>
-    </a-assets>
+
     <a-scene embedded arjs="trackingMethod:best;">
         <a-camera>
         </a-camera>
         <a-anchor hit-testing.enabled="true">
 
-
-
-            <a-entity gltf-model="#tree"></a-entity>
+            <a-entity geometry="primitive: box" material="color: red" light="type: point; intensity: 2.0">
 
         </a-anchor>
         <a-camera-static />
