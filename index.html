@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -21,7 +22,7 @@
             background: transparent;
             color: cadetblue;
             padding-left: 20px;
-            top:50px;
+            top: 50px;
         }
 
         #details .title {
@@ -34,40 +35,30 @@
             left: 20px;
             top: 10px;
         }
-
     </style>
     <script src="vendor/aframe.js"></script>
     <script src="vendor/aframe-ar.js"></script>
 </head>
+
 <body>
 
-<div id="map"></div>
-<a-scene embedded arjs="trackingMethod:best;">
-    <a-camera>
-    </a-camera>
-    <a-anchor hit-testing.enabled="true">
+    <div id="map"></div>
+    <a-scene embedded arjs="trackingMethod:best;">
+        <a-camera>
+        </a-camera>
+        <a-anchor hit-testing.enabled="true">
 
-        <a-entity id="detailsEntity" position="-1 1.5 0"
-                  geometry="primitive: plane; width: auto; height: auto"
-                  material="color: steelblue"
-                  text="value:"></a-entity>
+            <a-entity position="0 0 0" scale="1 1 1" gltf-model="obj/scene.gltf"></a-entity>
 
-        <a-sphere id="sphere" position="1 0.5 0">
-            <a-animation attribute="rotation"
-                         dur="10000"
-                         fill="forwards"
-                         to="0 360 0"
-                         repeat="indefinite"></a-animation>
-        </a-sphere>
+        </a-anchor>
+        <a-camera-static />
+    </a-scene>
 
-    </a-anchor>
-    <a-camera-static/>
-</a-scene>
+    <button id="locate">Locate ISS</button>
+    <div id="details"></div>
 
-<button id="locate">Locate ISS</button>
-<div id="details"></div>
-
-<script src="https://api.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.js"></script>
-<script src="src/js/main.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
+
 </html>

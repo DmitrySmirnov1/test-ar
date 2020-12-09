@@ -1,0 +1,330 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 7473,
+      "max": [
+        0.20170000195503235,
+        2.6642999649047852,
+        1.7681200504302979
+      ],
+      "min": [
+        -0.20170000195503235,
+        -4.2311902046203613,
+        -3.3860299587249756
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 89676,
+      "componentType": 5126,
+      "count": 7473,
+      "max": [
+        1,
+        0.99999982118606567,
+        0.99998992681503296
+      ],
+      "min": [
+        -1,
+        -0.99969446659088135,
+        -0.99973666667938232
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 43488,
+      "max": [
+        7472
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 179352,
+      "componentType": 5126,
+      "count": 15609,
+      "max": [
+        0.49544999003410339,
+        3.8225998878479004,
+        3.5823299884796143
+      ],
+      "min": [
+        -0.49544999003410339,
+        -1.8240799903869629,
+        -2.3604800701141357
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 366660,
+      "componentType": 5126,
+      "count": 15609,
+      "max": [
+        0.99999982118606567,
+        0.99992692470550537,
+        0.99999994039535522
+      ],
+      "min": [
+        -0.99999982118606567,
+        -0.99994748830795288,
+        -0.99999994039535522
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 173952,
+      "componentType": 5125,
+      "count": 92256,
+      "max": [
+        15608
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Furiianda (https://sketchfab.com/furiianda)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/blink-dagger-f04fe54a2ade4c0b997857217dff4b8f",
+      "title": "Blink Dagger"
+    },
+    "generator": "Sketchfab-6.31.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 542976,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 553968,
+      "byteOffset": 542976,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1096944,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": false,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "Blue",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0068602496758103371,
+          0.063930749893188477,
+          0.35055673122406006,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    },
+    {
+      "doubleSided": false,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "Material.001",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.61371469497680664,
+          0.75889140367507935,
+          0.80000001192092896,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "rend2_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "rend_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        -1.8369701465288538e-16,
+        -1,
+        0,
+        0,
+        1,
+        -1.8369701465288538e-16,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "rend2"
+    },
+    {
+      "mesh": 0,
+      "name": "rend2_0"
+    },
+    {
+      "children": [
+        6
+      ],
+      "name": "rend"
+    },
+    {
+      "mesh": 1,
+      "name": "rend_0"
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        0.39537000000000011,
+        0,
+        -0.91852,
+        0,
+        -0,
+        1,
+        0,
+        0,
+        0.91852,
+        0,
+        0.39537000000000011,
+        0,
+        6.8186499999999999,
+        -0,
+        2.5743900000000002,
+        1
+      ],
+      "name": "Sun"
+    },
+    {
+      "name": "Sun"
+    },
+    {
+      "children": [
+        10
+      ],
+      "matrix": [
+        0.41097000000000006,
+        -0,
+        0.91165000000000007,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.91165000000000007,
+        0,
+        0.41097000000000006,
+        0,
+        -8.4188599999999987,
+        -0,
+        2.2738399999999999,
+        1
+      ],
+      "name": "Sun.001"
+    },
+    {
+      "name": "Sun.001"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
+
