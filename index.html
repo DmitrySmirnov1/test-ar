@@ -21,10 +21,14 @@
 
     <a-scene embedded arjs>
         <a-marker preset="hiro">
-            <a-entity geometry="primitive: box" material="color: red">
+          <a-entity
+            position="0 0 0"
+            scale="0.05 0.05 0.05"
+            gltf-model="obj/scene.gltf"
+          ></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
-    </a-scene>
+      </a-scene>
 
     <script src="https://api.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.js"></script>
     <script src="src/js/main.js"></script>
