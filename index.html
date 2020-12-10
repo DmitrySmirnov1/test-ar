@@ -19,18 +19,16 @@
 
 <body>
 
-    <a-scene embedded arjs="trackingMethod:best;">
-        <a-camera>
-        </a-camera>
-        <a-anchor hit-testing.enabled="true">
-
-            <a-entity position="0 0 0" scale="0.05 0.05 0.05"
-                gltf-model="obj/scene.gltf" src="obj/scene.gltf">
-            </a-entity>
-
-        </a-anchor>
-        <a-camera-static />
-    </a-scene>
+    <a-scene embedded arjs>
+        <a-marker preset="hiro">
+          <a-entity
+            position="0 0 0"
+            scale="0.05 0.05 0.05"
+            gltf-model="obj/scene.gltf"
+          ></a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+      </a-scene>
 
     <script src="https://api.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.js"></script>
     <script src="src/js/main.js"></script>
